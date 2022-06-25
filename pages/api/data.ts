@@ -1,0 +1,6 @@
+import {NextApiResponse, NextApiRequest} from 'next'
+import moment from 'moment'
+
+export default (req: NextApiRequest ,res: NextApiResponse) =>{
+    res.status(200).json({data: moment().format('DD/MM/YYYY HH:mm:ss')})
+}
